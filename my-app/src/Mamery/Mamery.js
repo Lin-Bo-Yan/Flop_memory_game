@@ -8,35 +8,45 @@ import {shuffle,icon} from './Utils'
 
 
 function Mamery() {
-
     
     
+    const [shuffleIcon, setshuffleIcon] = useState(icon)
+
+    shuffle(shuffleIcon)
+
+     
 
 
-    //const [remainingTime, setremainingTime] = useState()
+    useEffect(()=>{
+
+        console.log(shuffleIcon)
+
+    },[shuffleIcon])
 
 
 
+
+   
 
     
     return (
     <ul class="myCards">
-        <li class="card" type="triangle">{icon.bar_one}</li>
-        <li class="card" type="triangle">{icon.bar_two}</li>
-        <li class="card" type="diamond">{icon.diamond_one}</li>
-        <li class="card" type="diamond">{icon.diamond_two}</li>
-        <li class="card" type="star">{icon.female_one}</li>
-        <li class="card" type="star">{icon.female_two}</li>
-        <li class="card" type="roundShape">{icon.male_one}</li>
-        <li class="card" type="roundShape">{icon.male_two}</li>
-        <li class="card" type="female">{icon.ohm_one}</li>
-        <li class="card" type="female">{icon.ohm_two}</li>
-        <li class="card" type="male">{icon.roundShape_one}</li>
-        <li class="card" type="male">{icon.roundShape_two}</li>
-        <li class="card" type="ohm">{icon.star_one}</li>
-        <li class="card" type="ohm">{icon.star_two}</li>
-        <li class="card" type="bar">{icon.triangle_one}</li>
-        <li class="card" type="bar">{icon.triangle_two}</li>
+        <li class="card" type="triangle">{icon[0].one}</li>
+        <li class="card" type="triangle">{icon[1].one}</li>
+        <li class="card" type="diamond">{icon[2].one}</li>
+        <li class="card" type="diamond">{icon[3].one}</li>
+        <li class="card" type="star">{icon[4].one}</li>
+        <li class="card" type="star">{icon[5].one}</li>
+        <li class="card" type="roundShape">{icon[6].one}</li>
+        <li class="card" type="roundShape">{icon[7].one}</li>
+        <li class="card" type="female">{icon[8].one}</li>
+        <li class="card" type="female">{icon[9].one}</li>
+        <li class="card" type="male">{icon[10].one}</li>
+        <li class="card" type="male">{icon[11].one}</li>
+        <li class="card" type="ohm">{icon[12].one}</li>
+        <li class="card" type="ohm">{icon[13].one}</li>
+        <li class="card" type="bar">{icon[14].one}</li>
+        <li class="card" type="bar">{icon[15].one}</li>
     </ul>
     )
 }

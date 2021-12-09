@@ -2,7 +2,7 @@
     height: 6rem;
     width: 6rem;	
     margin: 1rem 1rem;
-    background: #141214;
+    background: #7fa0fa;
     border: 2px solid red;  
     color: #ffffff;
     border-radius: 10px;
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10;
+    font-size: 20;
     /* 陰影元素 */
     box-shadow: 5px 2px 20px 0 rgba(22, 54, 101, 0.8);
     /* 淡入淡出 */
