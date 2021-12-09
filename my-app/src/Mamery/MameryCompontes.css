@@ -1,0 +1,36 @@
+.card{
+    height: 6rem;
+    width: 6rem;	
+    margin: 1rem 1rem;
+    background: #141214;
+    border: 2px solid red;  
+    color: #ffffff;
+    border-radius: 10px;
+    /* 圓角 */
+    cursor: pointer;
+    /* 變換滑鼠圖案 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10;
+    /* 陰影元素 */
+    box-shadow: 5px 2px 20px 0 rgba(22, 54, 101, 0.8);
+    /* 淡入淡出 */
+    transition: 0.75s;
+    -webkit-transition: 0.75s;
+}
+.myCards{
+	width: 45%;
+	background: rgba(6, 113, 229, 0.5);
+	padding: 1rem;
+	border-radius: 1px;
+	box-shadow: 8px 9px 26px 0 rgba(22, 54, 101, 0.8);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	/* 包裝彈性項目 wrap包裹 */
+	margin: 0 0 3em;
+	border-radius: 30px;
+	font-size: 30px;
+}
